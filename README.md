@@ -4,7 +4,7 @@ Este proyecto es una demostración sencilla del uso de bibliotecas externas en A
 
 El proyecto fue generado desde cero utilizando Angular CLI y está dividido en dos partes principales: un formulario modal interactivo y una visualización de datos con gráficos.
 
-Desplegado en GitHub Pages: https://github.com/DanielCaldes/angular-external-libraries
+Desplegado en GitHub Pages: https://danielcaldes.github.io/angular-external-libraries/
 
 ## Tecnologías utilizadas
 
