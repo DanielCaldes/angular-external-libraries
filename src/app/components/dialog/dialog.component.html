@@ -1,0 +1,39 @@
+<div class="dialog-container">
+    <h2 mat-dialog-title>Formulario</h2>
+
+    <form [formGroup]="myForm" (ngSubmit)="send()">
+
+    <div mat-dialog-content class="dialog-inputs-container">
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Nombre</mat-label>
+            <input matInput formControlName="name" type="text" required>
+            <mat-error *ngIf="myForm.get('name')?.hasError('required') && myForm.get('name')?.touched">
+                El nombre es requerido.
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" type="email" required>
+            <mat-error *ngIf="myForm.get('email')?.hasError('required') && myForm.get('email')?.touched">
+                El email es requerido.
+            </mat-error>
+            <mat-error *ngIf="myForm.get('email')?.hasError('email') && myForm.get('email')?.touched">
+                El email no es válido.
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Dirección</mat-label>
+            <input matInput formControlName="address" type="text" required>
+            <mat-error *ngIf="myForm.get('address')?.hasError('required') && myForm.get('address')?.touched">
+                La dirección es requerida.
+            </mat-error>
+        </mat-form-field>
+    </div>
+
+    <div mat-dialog-actions class="dialog-buttons-container">
+        <button mat-button type="button" (click)="cancel()">Cancelar</button>
+        <button mat-button color="primary" type="submit" [disabled]="myForm.invalid">Enviar</button>
+    </div>
+
+    </form>
+</div>

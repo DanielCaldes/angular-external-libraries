@@ -1,0 +1,9 @@
+<div class="material-form-container">
+    <div *ngIf="result != {}" class="form-result-container">
+        <p>Nombre: {{result.name}}</p>
+        <p>Email: {{result.email}}</p>
+        <p>Dirección: {{result.address}}</p>
+    </div>
+
+    <button mat-raised-button (click)="openDialog()" class="form-button">Abrir formulario</button>
+</div>

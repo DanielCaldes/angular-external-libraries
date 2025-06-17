@@ -1,0 +1,25 @@
+.material-form-container{
+    margin:1rem;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-button{
+    max-width: 200px;
+}
+
+.form-result-container{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin:1rem;
+}
+
+p{
+  font-weight: 400;
+  color: #ba005c; /* color primario Material */
+  margin-bottom:0;
+}

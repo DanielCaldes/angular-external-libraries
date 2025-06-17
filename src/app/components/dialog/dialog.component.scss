@@ -1,0 +1,25 @@
+.dialog-container{
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+}
+
+.dialog-inputs-container{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.dialog-buttons-container{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    justify-content: center;
+}
+
+.full-width{
+    width: 100%;
+}
